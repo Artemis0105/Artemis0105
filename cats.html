@@ -4,62 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=""description" content="介紹我家的貓咪們!還有大量可愛的貓照片。">
+    <link href="sttle.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css2?"
+    family="limelight&display=swap" rel="stylewsheet">
     <title>110111224王先達</title>
     <link rel="shortcut icon" href="img/avatar.png" type="image/x-icon">
     <style>
         #container{
             margin:0 auto;
             width: 980px;
-            background-color: rgb(216, 124, 204);
         }
-        header{background-color: rgb(115, 234, 238);
-        
-            }
-        nav{
-            background-color: rgb(153, 94, 230);
+        body{
+            background-color:rgb(37, 21, 184)8);
+            background-image: url(img/bg.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+            background-size: 50px 70px;
+            background: rgb(180, 227, 241) url(img/bg.png) repeat-x;
+        }
+        a{
+            color:rgb(240, 225, 25);
+        }
+        a:hover{
+            color:rgb(23, 196, 196);
+            text-decoration: none;
+        }
+        a[target="_blank"]::after{
+            content:url(img/ico_blank.png);
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        a[href^="mailto:"]::after{
+            content: url(img/ico_mail.png);
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        h1{
+            width: 300px;
+            margin:40px auto;
+            padding:30px;
+            border: 5px solid #05dbbd;  
+            border-radius: 50%;
+            text-shadow: 1px 1px 2px #b1f511;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            background-image: linear-gradient(to bottom,#6fbb9a,#4a9d4a);
+            background-color: blanchedalmond;
+            font-family: 'limelight',cursive;
+            color:rgb(114, 21, 235);
+            font-size: 300%;
+            text-align: center;
+            line-height: 1;
+        }
+        h2{
+            margin-bottom: 30px;
+            padding:10px;
+            border: 1px solid #05dbbd; 
+            border-left: 10px solid rgb(235, 35, 8);
+            color: blue;
+        }
+        #contents{
+            width: 798x;
+            margin: 40px auto;
+            margin: 40px;
+            padding: 40px 80px;
+            border: 1px solid #9afaf2;
+            background-color: #fff;
+        }
+        .more{
+            text-align: right;
+        }
+        .more::after{
+            content: url(img/ico_arrow.png);
+            margin-left: 3px;
+            vertical-align: middle;
+        }
+        .h{
+            padding: 10px;
+            margin-bottom: 30px;
+            border: 1px dotted #05dbbd;
+            border-left: 10px solid #05dbbd;
+            color: rgb(84, 53, 102);
+        }
+        .h-sub span{
+            font-weight: normal;
+        }
+        .h-sub{
+            padding:10px;
+            background-color: #fbf9cc;
+            color:#4a9d4a;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 2px #00ff inset;
+        }
+        section+section{
+            margin-top: 80px;
+        }
+        #contents > section + section{
+            margin-top: 80x;
+            width: 798px;
+            margin: 40px auto;
+        }
+        header,nav,footer{
+            text-align: center;
+        }
+        .menu li{
+            list-style-type: none;
+            display: inline-block;
+            width: 180px;
+            margin: 0 10px;
+        }
+        .menu a{
+            padding: 10px;
+            display: block;
+            background: #6fbb9a;
+            border-radius:8px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .menu a:hover{
+            background: #187df0;
+        }
+        .imgL{
+            float:left;
+            margin-right: 20px;
+        }
+        .imgR{
+            float:right;
+            margin-left:20px;
+        }
+        .img-round{
+            border-radius: 50%;
+        }
+        .clear{
+            clear:both;
+        }
+        .clearfix::after{
+            content:"";
+            display:block;
+            clear:both;
         }
     </style>
-</head>
+</head> 
 <body>
     <div id="container">
-        <header>
+    <header>
     <h1>KOMA-NATSU Web</h1>
     <p>介紹一下我家的偶像貓咪們！</p>
         </header>
-<nav>
-    <ul>
-        <li><a href="#intro">關於本站</a></li>
-        <li><a href="#cats">我家的貓咪</a></li>
-        <li><a href="#profile">飼主介紹</a></li>
-</nav>
-        <main>
+    <nav class="menu">
+        <ul>
+            <li><a href="#intro">關於本站</a></li>
+            <li><a href="#cats">我家的貓咪</a></li>
+            <li><a href="#profile">飼主介紹</a></li>
+    </nav>
+    <main>
+            <main id="contents">
         <section id="intro">
-                <h2>關於本站</h2>
+            <h2 class="h">關於本站</h2>
                 <p>歡迎光臨本站。<br>
                 這裡是介紹我家貓主子姐妹的曬貓網站，有大量的可愛相片。<br>
                 ※未經許可，請勿擅自複製轉載。<br>
                 </p>
         </section>
-        <section>
-        <h2>我家的貓咪</h2>
-            <section id="cats">
-            <h3>小町（KOMACHI・♀）</h3>
-            <img src="img/komachi.jpg" alt="D:\Artemis0105\img">
+        
+        <section id="cats">
+        <h2 class="h">我家的貓咪</h2>
+            <h3 class="h-sub">小町<span>（KOMACHI・♀）</span></h3>
+            <img src="img/komachi.jpg" width="480" height="320" alt="D:\Artemis0105\img"class="imgL">       
             <p>出生不到2個月就到家的貓姐姐。<br>
             從出生就是養在溫室裡的花朵，所以非常膽小怕生。因為太怕生，只要聽到門鈴聲就會躲起來，所以就算是來我家的客人也難以見到。<br>
-            <p><a href="cats/komachi.html">→更多介紹</a></p>
+            <p class="more clear"><a href="cats/komachi.html">→更多介紹</a></p>
         </section>
         <section>
-            <h3>小夏（KONATSU・♀）</h3>
-            <img src="img/konatsu.jpg" width="480" height="320" alt="D:\Artemis0105\img">
+            <h3 class="h-sub">小夏<span>（KONATSU・♀）</span></h3>
+            <img src="img/konatsu.jpg" width="480" height="320" alt="D:\Artemis0105\img" class="imgR">
             <p>為了讓小町有個伴，在1年後抱回來貓妹妹。<br>
             原本是在埼玉縣飯能市的煤礦場出生長大的小野貓。和小町不同，是個性活潑親人，愛吃、愛玩、愛睡的元氣寶寶。<br>
             </p>
-            <p><a href="cats/konatsu.html">→更多介紹</a></p>
+            <p class="more clear"><a href="cats/konatsu.html">→更多介紹</a></p>
         </section>
     </ul>
-    <section id="profile">
-    <h2>飼主介紹</h2>
+    <section id="profile" class="clearfix">
+    <h2 class="h">飼主介紹</h2>
+    <img src="img/avatar.png" width="250" height="250" alt="大頭照" class="img-round imgL">
     <dt>暱稱 ：</dt><dd>roka404</dd>
     <dt>職業 ：</dt><dd>Web相關工作的SOHO族</dd>
     <dt>mail ：</dt><dd><a href="mailto:info@roka404.main.jp">info@roka404.main.jp</a></dd>
