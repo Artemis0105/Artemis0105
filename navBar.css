@@ -18,3 +18,9 @@ nav li a:hover{
     color: rgb(224, 15, 95);
     transition: background-color 1s linear;
 }
+nav ul{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+}

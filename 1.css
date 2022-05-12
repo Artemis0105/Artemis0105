@@ -24,6 +24,7 @@ nav ul{
 }
 body{
     background-color: rgb(212, 235, 248);
+    margin: 0px;
 }
 #container{
     margin:0 auto;
