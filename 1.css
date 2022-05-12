@@ -39,13 +39,12 @@ body{
 h1{
     width: 300px;
     margin:40px auto;
-    padding:30px;
+    padding:20px;
     border: 5px solid #b4abe4;  
     border-radius: 50%;
     text-shadow: 1px 1px 2px #b1f511;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(to bottom,#ee959d,#a195e4);
-
     font-family: 'limelight',cursive;
     color:rgb(114, 21, 235);
     font-size: 300%;
