@@ -1,0 +1,14 @@
+
+.packages .grid li {
+	flex-basis: 33%;
+}
+
+.circle{
+    border-radius: 10%;
+}
+
+@media (max-width: 1000px) {
+	.packages .grid li {
+		flex-basis: 50%;
+	}
+}

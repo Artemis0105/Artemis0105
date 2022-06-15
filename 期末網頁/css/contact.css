@@ -1,0 +1,17 @@
+.grid a{
+	color:#000;
+}
+
+.grid a:hover{
+    color: rgb(166, 154, 236);
+}
+
+.packages .grid li {
+	flex-basis: 25%;
+}
+
+@media (max-width: 1000px) {
+	.packages .grid li {
+		flex-basis: 50%;
+	}
+}
