@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(253, 235, 248);
+    color: rgb(92, 61, 32);
+    margin: 0px;
+}
+h1{
+    color:rgb(78, 60, 241);
+}
+#container{
+    background-color: rgb(216, 124, 204);
+    margin: 0 auto;
+    width: 980px;
+}
+header{
+    background-color: rgb(115, 234, 238);
+}
+nav{
+    background-color: rgb(153, 94, 230);
+}
+.nav{
+    background-color: rgb(152, 248, 252);
+    text-align: right;
+    margin: 0px;
+}
+.nav ul{
+    margin: 0px;
+}
+.nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+.nav li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 136, 0);
+}
+.nav li a:hover{
+    background-color: rgb(255, 255, 240);
+    color: rgb(255, 198, 198);
+    transition: background-color 2s linear, color 2s;  
+}
